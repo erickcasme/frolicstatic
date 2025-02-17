@@ -10,7 +10,14 @@
     width: 40%;
   }
 
+  .tour-information {
+    padding: 0px !important;  
+ }
 
+
+ .tabs .nav-tabs li a:hover {
+    color: #45b0c6 !important;
+ }
 
   @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 
@@ -26,5 +33,12 @@
     height: 70%;
     width: 100%;
   }
+
+  .imgResponsive {
+    display: none;
+  }
+
+
+
 
 }
