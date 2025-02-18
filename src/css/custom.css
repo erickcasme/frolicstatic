@@ -14,10 +14,28 @@
     padding: 0px !important;  
  }
 
+ .tour-attraction {
+    padding: 0px !important;  
+ }
+
+ .things-todo {
+    padding: 0px !important;  
+ }
+
+ .related-tours {
+    padding: 0px !important;  
+}
 
  .tabs .nav-tabs li a:hover {
     color: #45b0c6 !important;
  }
+
+ .tour-location .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 40px;
+}
 
   @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 
@@ -37,6 +55,13 @@
   .imgResponsive {
     display: none;
   }
+
+  .tour-location .content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    /* padding: 40px; */
+}
 
 
 
