@@ -63,6 +63,14 @@
     /* padding: 40px; */
 }
 
+.tabs .tab-content {
+    width: 100%;
+    float: left;
+    border: none;
+    background: #fff;
+    padding: 0px;
+}
+
 
 
 
