@@ -1115,31 +1115,33 @@
  
  <script>
     function initMap() {
-      // Coordenadas del Aeropuerto
-      var airport = {lat: -12.0219, lng: -77.1143};
-      
-      // Coordenadas del punto intermedio
-      var dia2 = {lat: -11.954692905426247, lng: -77.02635952377466};
-      var dia3 = {lat: -13.850080479569113, lng: -76.25731662441424};
-      var dia4 = {lat: -13.53185734874885, lng: -71.98516894771473};
-      var dia5 = {lat: -13.38694766047935, lng: -71.8231207416938};
-      var dia6 = {lat: -13.365571082958118, lng: -72.207642191374};
-      var dia7 = {lat: -12.969765527719435, lng: -72.51525935111816};
-      var dia8 = {lat: -13.359108778963062, lng: -71.92280298801296};
-
+      // Coordenadas 
+      var dia1 = {lat: 32.07823687588973, lng: 34.76700411288302};
+      var dia2 = {lat: 32.06943975735097, lng: 34.76461490912758};
+      var dia3 = {lat: 32.06556895480981, lng: 34.77670766864903};
+      var dia4 = {lat: 32.8162625184527, lng: 34.99443077418961};
+      var dia5 = {lat: 32.70725282771111,lng: 35.301726268679396};
+      var dia6 = {lat: 32.88190929265422, lng: 35.57330517443442};
+      var dia7 = {lat: 31.874743575747267, lng: 35.43231742297448};
+      var dia8 = {lat: 31.451273126411376, lng:35.38241751939832};
+      var dia9 = {lat: 31.776864804365562, lng: 35.23454068212835};
+      var dia10 = {lat: 31.778608960647205, lng:35.22967529747136};
+      var dia11 = {lat: 31.70611139612799, lng: 35.202313684761684};
+      var dia12 = {lat: 31.767691208459294, lng:35.21655331666361};
+      var dia13 = {lat: 32.00059205016604, lng:34.8705129361099};
 
 
       // Crear el mapa
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: airport
+        zoom: 6,
+        center: dia1
       });
 
       const image = "images/circulos/";
 
       // Crear marcadores para los dos puntos
       var marker1 = new google.maps.Marker({
-        position: airport,
+        position: dia1,
         map: map,
         title: 'Aeropuerto',
         icon: image + "1.png",
@@ -1194,11 +1196,46 @@
         title: 'Punto Intermedio',
         icon: image + "8.png",
       });
+
+      var marker9 = new google.maps.Marker({
+        position: dia9,
+        map: map,
+        title: 'Punto Intermedio',
+        icon: image + "9.png",
+      });
+
+      var marker10 = new google.maps.Marker({
+        position: dia10,
+        map: map,
+        title: 'Aeropuerto',
+        icon: image + "10.png",
+      });
+
+      var marker11 = new google.maps.Marker({
+        position: dia11,
+        map: map,
+        title: 'Aeropuerto',
+        icon: image + "11.png",
+      });
+
+      var marker12 = new google.maps.Marker({
+        position: dia12,
+        map: map,
+        title: 'Aeropuerto',
+        icon: image + "12.png",
+      });
+
+      var marker13 = new google.maps.Marker({
+        position: dia13,
+        map: map,
+        title: 'Aeropuerto',
+        icon: image + "13.png",
+      });
    
 
       // Crear la línea entre los dos puntos
       var flightPath = new google.maps.Polyline({
-        path: [airport, dia2, dia3,dia4,dia5,dia5,dia7,dia8, airport],
+        path: [dia1, dia2, dia3,dia4,dia5,dia5,dia7,dia8,dia9, dia10, dia11, dia12, dia13, dia1],
         geodesic: true,
         strokeColor: '#45b0c6',
         strokeOpacity: 1.0,

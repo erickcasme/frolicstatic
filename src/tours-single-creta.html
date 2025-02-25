@@ -993,33 +993,31 @@
  
  <script>
     function initMap() {
-      // Coordenadas del Aeropuerto
-      var airport = {lat: -12.0219, lng: -77.1143};
-      
-      // Coordenadas del punto intermedio
-      var dia2 = {lat: -11.954692905426247, lng: -77.02635952377466};
-      var dia3 = {lat: -13.850080479569113, lng: -76.25731662441424};
-      var dia4 = {lat: -13.53185734874885, lng: -71.98516894771473};
-      var dia5 = {lat: -13.38694766047935, lng: -71.8231207416938};
-      var dia6 = {lat: -13.365571082958118, lng: -72.207642191374};
-      var dia7 = {lat: -12.969765527719435, lng: -72.51525935111816};
-      var dia8 = {lat: -13.359108778963062, lng: -71.92280298801296};
+      // Coordenadas 
+      var dia1 = {lat: 35.3397648704152, lng: 25.17606449579512};
+      var dia2 = {lat: 35.29790745144224, lng: 25.738010405585385};
+      var dia3 = {lat: 35.29811448813758, lng: 25.162824411136004};
+      var dia4 = {lat: 35.21646276755512, lng: 24.536387418449245};
+      var dia5 = {lat: 35.372534202986515, lng: 24.474360648411594};
+      var dia6 = {lat: 35.27180983058562, lng: 23.54155332563838};
+      var dia7 = {lat: 35.51823793641299, lng: 24.015281795331656};
+      var dia8 = {lat: 35.539984275945116, lng: 24.140447211148512};
 
 
 
       // Crear el mapa
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: airport
+        zoom: 6,
+        center: dia1
       });
 
       const image = "images/circulos/";
 
       // Crear marcadores para los dos puntos
       var marker1 = new google.maps.Marker({
-        position: airport,
+        position: dia1,
         map: map,
-        title: 'Aeropuerto',
+        title: 'inicio',
         icon: image + "1.png",
       });
 
@@ -1076,7 +1074,7 @@
 
       // Crear la línea entre los dos puntos
       var flightPath = new google.maps.Polyline({
-        path: [airport, dia2, dia3,dia4,dia5,dia5,dia7,dia8, airport],
+        path: [dia1, dia2, dia3,dia4,dia5,dia5,dia7,dia8, dia1],
         geodesic: true,
         strokeColor: '#45b0c6',
         strokeOpacity: 1.0,

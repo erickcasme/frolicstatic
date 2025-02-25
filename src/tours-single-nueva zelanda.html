@@ -996,31 +996,28 @@
  
  <script>
     function initMap() {
-      // Coordenadas del Aeropuerto
-      var airport = {lat: -12.0219, lng: -77.1143};
-      
-      // Coordenadas del punto intermedio
-      var dia2 = {lat: -11.954692905426247, lng: -77.02635952377466};
-      var dia3 = {lat: -13.850080479569113, lng: -76.25731662441424};
-      var dia4 = {lat: -13.53185734874885, lng: -71.98516894771473};
-      var dia5 = {lat: -13.38694766047935, lng: -71.8231207416938};
-      var dia6 = {lat: -13.365571082958118, lng: -72.207642191374};
-      var dia7 = {lat: -12.969765527719435, lng: -72.51525935111816};
-      var dia8 = {lat: -13.359108778963062, lng: -71.92280298801296};
+      // Coordenadas 
+      var dia1 = {lat: -36.84093400478991, lng: 174.75710886888783};
+      var dia2 = {lat: -36.8477860923995, lng: 174.83441884122132};
+      var dia3 = {lat: -37.87190312337597, lng: 175.68290800942142};
+      var dia4 = {lat: -40.221160641702255, lng: 176.35728795092083};
+      var dia5 = {lat: -45.02980975127507, lng: 168.65842397265263};
+      var dia6 = {lat: -44.67002599274044, lng: 167.9223465987204};
+      var dia7 = {lat: -45.03316794833932, lng: 168.66157823682576};
 
 
 
       // Crear el mapa
       var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 12,
-        center: airport
+        zoom: 6,
+        center: dia1
       });
 
       const image = "images/circulos/";
 
       // Crear marcadores para los dos puntos
       var marker1 = new google.maps.Marker({
-        position: airport,
+        position: dia1,
         map: map,
         title: 'Aeropuerto',
         icon: image + "1.png",
@@ -1069,17 +1066,11 @@
         icon: image + "7.png",
       });
 
-      var marker8 = new google.maps.Marker({
-        position: dia8,
-        map: map,
-        title: 'Punto Intermedio',
-        icon: image + "8.png",
-      });
    
 
       // Crear la línea entre los dos puntos
       var flightPath = new google.maps.Polyline({
-        path: [airport, dia2, dia3,dia4,dia5,dia5,dia7,dia8, airport],
+        path: [dia1, dia2, dia3,dia4,dia5,dia5,dia7, dia1],
         geodesic: true,
         strokeColor: '#45b0c6',
         strokeOpacity: 1.0,
