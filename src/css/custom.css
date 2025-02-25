@@ -37,6 +37,18 @@
     padding: 40px;
 }
 
+.tour-attraction .attraction-carousel .attraction-box figcaption:after {
+  content: "";
+  width: 55px;
+  height: 1px;
+  background: #45b0c6;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  -webkit-transition: .25sease-in-out;
+  transition: .25sease-in-out;
+}
+
   @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
 
   .mapContent {

@@ -146,7 +146,7 @@
 
 
 		// SLIDER
-		var menu = ['WHO WE ARE<span>OUR PASSION</span>', 'NOTHERN LIGHTS<span>SPECIAL OFFER</span>', 'BEST SELLING<span>ICE CLIMBING</span>', 'THE FAMOUS<span>HIKING TRAILS</span>'];
+		var menu = ['EXPLORA LA <span>CULTURA PERUANA</span>', 'PARAÍSO<span>GRIEGO</span>', 'AVENTURA EN<span>PAISAJES ÉPICOS</span>', 'AVENTURA<span>AUSTRALIANA</span>'];
 		var interleaveOffset = 0.5;
 		var swiperOptions = {
 			loop: true,
