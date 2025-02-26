@@ -24,7 +24,8 @@
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/custom.css">  
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />  
 
 </head>
 
@@ -923,9 +924,9 @@
   <script src="js/wow.min.js"></script>
   <script src="js/odometer.min.js"></script>
   <script src="js/scripts.js"></script>
-  <!-- <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCUCRAdytmMnSNnCdu0Ll8Ldy8Oap-CpKQ&callback"></script> -->
-  <!-- <script src="js/googlemaps.min.js"></script> -->
-  <!-- <script src="js/route-map.js"></script> -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/map.js"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBytrto3r_qCE7F-iMiG2QJyrxVcT6aG6U&callback=initMap" async defer></script>
  
  
@@ -933,68 +934,69 @@
  
  
  <script>
-    function initMap() {
-      // Coordenadas del Aeropuerto
-      var dia1 = {lat: 22.997886253481948, lng: -82.40744701822837};
-      var dia2 = {lat: 23.110487220670297, lng: -82.44156171588462};
-      var dia3 = {lat: 23.140325120452896, lng: -82.35765292562428};
-      var dia4 = {lat: 23.204127751993887, lng: -81.03686992098234};
+//     function initMap() {
+//       // Coordenadas del Aeropuerto
+//       var dia1 = {lat: 22.997886253481948, lng: -82.40744701822837};
+//       var dia2 = {lat: 23.110487220670297, lng: -82.44156171588462};
+//       var dia3 = {lat: 23.140325120452896, lng: -82.35765292562428};
+//       var dia4 = {lat: 23.204127751993887, lng: -81.03686992098234};
 
 
 
-      // Crear el mapa
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 6,
-        center: dia1
-      });
+//       // Crear el mapa
+//       var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 6,
+//         center: dia1
+//       });
 
-      const image = "images/circulos/";
+//       const image = "images/circulos/";
 
-      // Crear marcadores para los dos puntos
-      var marker1 = new google.maps.Marker({
-        position: dia1,
-        map: map,
-        title: 'Aeropuerto',
-        icon: image + "1.png",
-      });
+//       // Crear marcadores para los dos puntos
+//       var marker1 = new google.maps.Marker({
+//         position: dia1,
+//         map: map,
+//         title: 'Aeropuerto',
+//         icon: image + "1.png",
+//       });
 
- var marker2 = new google.maps.Marker({
-        position: dia2,
-        map: map,
-        title: 'Punto Intermedio',
-        icon: image + "2.png",
-      });
+//  var marker2 = new google.maps.Marker({
+//         position: dia2,
+//         map: map,
+//         title: 'Punto Intermedio',
+//         icon: image + "2.png",
+//       });
 
-      var marker3 = new google.maps.Marker({
-        position: dia3,
-        map: map,
-        title: 'Punto Intermedio',
-        icon: image + "3.png",
-      });
+//       var marker3 = new google.maps.Marker({
+//         position: dia3,
+//         map: map,
+//         title: 'Punto Intermedio',
+//         icon: image + "3.png",
+//       });
 
-      var marker4 = new google.maps.Marker({
-        position: dia4,
-        map: map,
-        title: 'Punto Intermedio',
-        icon: image + "4.png",
-      });
+//       var marker4 = new google.maps.Marker({
+//         position: dia4,
+//         map: map,
+//         title: 'Punto Intermedio',
+//         icon: image + "4.png",
+//       });
 
 
     
    
 
-      // Crear la línea entre los dos puntos
-      var flightPath = new google.maps.Polyline({
-        path: [dia1, dia2, dia3,dia4, dia1],
-        geodesic: true,
-        strokeColor: '#45b0c6',
-        strokeOpacity: 1.0,
-        strokeWeight: 5
-      });
+//       // Crear la línea entre los dos puntos
+//       var flightPath = new google.maps.Polyline({
+//         path: [dia1, dia2, dia3,dia4, dia1],
+//         geodesic: true,
+//         strokeColor: '#45b0c6',
+//         strokeOpacity: 1.0,
+//         strokeWeight: 5
+//       });
 
-      flightPath.setMap(map);
-    }
+//       flightPath.setMap(map);
+//     }
   </script>
+
 </body>
 
 </html>

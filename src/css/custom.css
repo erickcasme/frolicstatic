@@ -1,3 +1,10 @@
+
+
+#map {
+  height: 80%;
+  width: 100%;
+}
+
 .mapContent {
     width: 40%;
     height: 100%;
@@ -38,6 +45,18 @@
 }
 
 .tour-attraction .attraction-carousel .attraction-box figcaption:after {
+  content: "";
+  width: 55px;
+  height: 1px;
+  background: #45b0c6;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  -webkit-transition: .25sease-in-out;
+  transition: .25sease-in-out;
+}
+
+.adventure-activities .activities-carousel .activity-box figcaption:after {
   content: "";
   width: 55px;
   height: 1px;
