@@ -1,4 +1,6 @@
-
+.form-group select{
+  height: 57px;
+}
 
 #map {
   height: 80%;
@@ -66,6 +68,35 @@
   bottom: 25px;
   -webkit-transition: .25sease-in-out;
   transition: .25sease-in-out;
+}
+
+
+.checkout .passengers-info form input[type="checkbox"] {
+  border: 1px solid #45b0c6 !important;
+}
+
+.checkout .passengers-info form input[type="checkbox"]:checked {
+  background: url(../images/icon-check.svg) center no-repeat !important;
+  background-size: 18px auto;
+}
+
+
+.checkout .passengers-info form input[type="radio"] {
+  width: 30px;
+  height: 30px;
+  float: left;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid #45b0c6;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checkout .passengers-info form input[type="radio"]:checked {
+  background: url(../images/icon-check.svg) center no-repeat;
+  background-size: 18px auto;
 }
 
   @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {

@@ -146,7 +146,7 @@
 
 
 		// SLIDER
-		var menu = ['EXPLORA LA <span>CULTURA PERUANA</span>', 'PARAÍSO<span>GRIEGO</span>', 'AVENTURA EN<span>PAISAJES ÉPICOS</span>', 'AVENTURA<span>AUSTRALIANA</span>'];
+		var menu = ['EXPLORA EL<span> MUNDO</span>', 'ESTABLECE<span>CONEXIONES</span>', 'AVENTURA CON<span>PAISAJES ÉPICOS</span>', 'GRUPOS<span>EXCLUSIVOS</span>'];
 		var interleaveOffset = 0.5;
 		var swiperOptions = {
 			loop: true,
