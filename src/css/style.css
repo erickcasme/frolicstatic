@@ -2,7 +2,7 @@
 @import url("fonts/sailors-webfont.ttf");@font-face {font-family: "Sailor";
     src:
       local("Sailor"),
-      url("fonts/sailors-webfont.ttf") format("opentype") tech(color-COLRv1),
+      url("../fonts/sailors-webfont.ttf") format("opentype") tech(color-COLRv1),
       url("../fonts/sailors-webfont.ttf") format("opentype"),
       url("../fonts/sailors-webfont.woff") format("woff");
   };
