@@ -1,0 +1,86 @@
+<style>
+        body {
+            font-family: poppins, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1920px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .question {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+        .answer {
+            margin-bottom: 10px;
+            color: #555;
+        }
+    </style>
+<p>Cuestionario enviado de :</p>
+<div class="container">
+<p style="padding-left: 40px;"><span style="color: #3598db;"><strong><span style="color: #000000;">Nombre:</span></strong> <span style="color: #000000;"><strong>{{nombre}} {{apellido}}</strong></span>&nbsp;</span></p>
+<p style="padding-left: 40px;"><span style="color: #000000;"><strong>Correo: </strong></span>{{correo}}&nbsp;</p>
+<p style="padding-left: 40px;"><strong><span style="color: #000000;">Tel&eacute;fono:</span></strong> {{telefono}}</p>
+<p style="padding-left: 40px;"><span style="color: #000000;"><strong>Sexo:</strong></span> {{sexo}}</p>
+<p style="padding-left: 40px;"><span style="color: #000000;"><strong>Red social:</strong></span> {{social}}</p>
+<p style="padding-left: 40px;"><span style="color: #000000;"><strong>Religi&oacute;n:</strong></span> {{religion}}</p>
+<p style="padding-left: 40px;"><strong><span style="color: #000000;">Estado civil:</span></strong> {{edo_civil}}</p>
+<p style="padding-left: 40px;"><strong><span style="color: #000000;">Signo: </span></strong>{{signo}}</p>
+<p style="padding-left: 40px;"><span style="color: #000000;"><strong>Hijos:</strong> </span>{{hijos}}</p>
+<p style="padding-left: 40px;"><strong><span style="color: #000000;">Sector trabajo: </span></strong>{{trabajo}}</p>
+<p style="padding-left: 40px;"><strong><span style="color: #000000;">Pa&iacute;s:</span></strong> {{pais}}</p>
+</div>
+<p>________________________________________________________________________________</p>
+<div class="container">
+<h2>Respuestas del Cuestionario</h2>
+<div class="question">1. &iquest;C&oacute;mo te describir&iacute;as en t&eacute;rminos de tu estilo de vida?</div>
+<div class="answer">{{P1}}</div>
+<div class="question">2. &iquest;Qu&eacute; tipos de viaje te gustan? (selecciona una o varias)</div>
+<div class="answer">{{P21}}</div>
+<div class="answer">{{P22}}</div>
+<div class="answer">{{P23}}</div>
+<div class="answer">{{P24}}</div>
+<div class="answer">{{P25}}</div>
+<div class="answer">{{P26}}</div>
+<div class="answer">{{P27}}</div>
+<div class="answer">{{P28}}</div>
+<div class="answer">{{P29}}</div>
+<div class="answer">{{P210}}</div>
+<div class="answer">{{P211}}</div>
+<div class="question">3. &iquest;C&oacute;mo prefieres viajar de un lugar a otro?</div>
+<div class="answer">{{P3}}</div>
+<div class="question">4. Durante un viaje, &iquest;qu&eacute; prefieres hacer en tu tiempo libre?</div>
+<div class="answer">{{P4}}</div>
+<div class="question">5. &iquest;Qu&eacute; destino te gustar&iacute;a visitar? (Selecciona uno o varios)</div>
+<div class="answer">{{P51}}</div>
+<div class="answer">{{P52}}</div>
+<div class="answer">{{P53}}</div>
+<div class="answer">{{P54}}</div>
+<div class="answer">{{P55}}</div>
+<div class="answer">{{P56}}</div>
+<div class="answer">{{P57}}</div>
+<div class="answer">{{P58}}</div>
+<div class="answer">{{P59}}</div>
+<div class="answer">{{P50}}</div>
+<div class="answer">{{P501}}</div>
+<div class="question">6. Acompa&ntilde;amiento para viajes</div>
+<div class="answer">{{P6}}</div>
+<div class="question">7. &iquest;Con qu&eacute; rango de edades te sientes m&aacute;s c&oacute;modo viajando?</div>
+<div class="answer">{{P7}}</div>
+<div class="question">8. &iquest;C&oacute;mo prefieres que sea tu itinerario durante un viaje?</div>
+<div class="answer">{{P8}}</div>
+<div class="question">9. &iquest;Cu&aacute;ndo est&aacute;s pensando viajar?</div>
+<div class="answer">{{P9}}</div>
+<div class="question">10. &iquest;C&oacute;mo te enteraste de nosotros?</div>
+<div class="answer">{{P10}}</div>
+</div>
+<p style="text-align: center;">&nbsp;</p>
+<p style="padding: 12px; border-left: 4px solid #d0d0d0; font-style: italic;">{{message}}</p>
+<p>&nbsp;</p>
