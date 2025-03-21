@@ -23,6 +23,26 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/custom.css">
+
+<style>
+
+  @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+
+.quote {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 376px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-image:url(images/quote-bg01-movil.jpg) !important;
+}
+
+}
+</style>
 </head>
 <body>
 <div class="preloader">
@@ -137,7 +157,7 @@
     <!-- end navbar -->
   </div>
   <!-- end container -->
-  <div class="swiper-container">
+  <div class="swiper-container web">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
        <div class="slide-inner bg-image" data-background="images/slide05.jpg">
@@ -185,6 +205,57 @@
     <!-- end swiper-custom-pagination -->
   </div>
   <!-- end swiper-container -->
+
+<!-- swiper movil -->
+<div class="swiper-container movil">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">
+     <div class="slide-inner bg-image" data-background="images/slide05.jpg">
+      <div class="container">
+        <h2 data-swiper-parallax="-300">conocerás gente con quien compartir más que un viaje</h2>
+        <a href="tours-single.html" class="link" data-swiper-parallax="-100"></a> </div>
+      <!-- end container -->
+      </div>
+      <!-- end slide-inner -->
+    </div>
+    <!-- end swiper-slide -->
+    <div class="swiper-slide">
+     <div class="slide-inner bg-image" data-background="images/slide02.jpg">
+      <div class="container">
+        <h2 data-swiper-parallax="-300">Viajes diseñados para ti. Disfruta, nosotros nos encargamos</h2>
+        <a href="tours-single-creta.html" class="link" data-swiper-parallax="-100"></a> </div>
+      <!-- end container -->
+      </div>
+      <!-- end slide-inner -->
+    </div>
+    <!-- end swiper-slide -->
+    <div class="swiper-slide">
+     <div class="slide-inner bg-image" data-background="images/slide03-movil.jpg">
+      <div class="container">
+        <h2 data-swiper-parallax="-300">Disfrutar, Explorar y Crear Recuerdos Inolvidables</h2>
+        <a href="tours-single-nueva zelanda.html" class="link" data-swiper-parallax="-100"></a></div>
+      <!-- end container -->
+       </div>
+      <!-- end slide-inner -->
+    </div>
+    <!-- end swiper-slide -->
+    <div class="swiper-slide">
+     <div class="slide-inner bg-image" data-background="images/slide04.jpg">
+      <div class="container">
+        <h2 data-swiper-parallax="-300">Somos un Grupo de Amigos Viajando Juntos</h2>
+        <a href="tours-single-australia.html" class="link" data-swiper-parallax="-100"></a> </div>
+      <!-- end container -->
+       </div>
+      <!-- end slide-inner -->
+    </div>
+    <!-- end swiper-slide -->
+  </div>
+  <!-- end swiper-wrapper -->
+  <div class="swiper-custom-pagination"></div>
+  <!-- end swiper-custom-pagination -->
+</div>
+<!-- end swiper-container -->
+
 </header>
 <!-- end header -->
  
@@ -210,8 +281,8 @@
             <h3>Australia</h3>
             <ul>
               <li><div> <img src="images/icon-date.png" alt="Image"> <small>FECHAS&nbsp;</small> <span>13 - 19 OCTUBRE</span> </div></li>
-              <li><div> <img src="images/icon-time.png" alt="Image"> <small>DURACIÓN</small> <span>7 DÍAS&nbsp; 6 NOCHES</span> </div></li>
-              <li><div> <img src="images/icon-tag.png" alt="Image"> <small>DESDE</small> <span>$2,716 USD</span> </div></li>
+              <li><div> <img src="images/icon-time.png" alt="Image"> <small>DURACIÓN</small> <span>7 DÍAS 6 NOCHES</span> </div></li>
+              <li><div> <img src="images/icon-tag.png" alt="Image"> <small>DESDE</small> <span>$2,699 USD</span> </div></li>
             </ul>
             <a href="tours-single-australia.html">VER DETALLES</a> </div>
           <!-- end tour-content -->
@@ -225,9 +296,9 @@
           <div class="tour-content"> <small>HISTORIA</small>
             <h3>Creta</h3>
             <ul>
-              <li><div> <img src="images/icon-date.png" alt="Image"> <small>FECHAS</small> <span>2 FECHAS</span> </div></li>
-              <li><div> <img src="images/icon-time.png" alt="Image"> <small>DURACIÓN</small> <span>14 DÍAS&nbsp;11 NOCHES</span> </div></li>
-              <li><div> <img src="images/icon-tag.png" alt="Image" class="rounded"> <small>DESDE</small> <span>$2,453 USD</span> </div></li>
+              <li><div> <img src="images/icon-date.png" alt="Image"> <small>FECHAS</small> <span>24 OCT - 1 NOV</span> </div></li>
+              <li><div> <img src="images/icon-time.png" alt="Image"> <small>DURACIÓN</small> <span>8 DÍAS&nbsp;7 NOCHES</span> </div></li>
+              <li><div> <img src="images/icon-tag.png" alt="Image" class="rounded"> <small>DESDE</small> <span>$2,534 USD</span> </div></li>
             </ul>
             <a href="tours-single-creta.html">VER DETALLES</a> </div>
           <!-- end tour-content -->
@@ -257,9 +328,9 @@
           <div class="tour-content"> <small>AVENTURA</small>
             <h3>Nueva Zelanda</h3>
             <ul>
-              <li><div> <img src="images/icon-date.png" alt="Image"> <small>FECHA</small> <span>6 - 12 OCTUBRE</span> </div></li>
-              <li><div> <img src="images/icon-time.png" alt="Image"> <small>DURACIÓN</small> <span>7 DÍAS 6 NOCHES</span> </div></li>
-              <li><div> <img src="images/icon-tag.png" alt="Image"> <small>DESDE</small> <span>$3,249 USD</span> </div></li>
+              <li><div> <img src="images/icon-date.png" alt="Image"> <small>FECHA</small> <span>6 - 13 OCTUBRE</span> </div></li>
+              <li><div> <img src="images/icon-time.png" alt="Image"> <small>DURACIÓN</small> <span>8 DÍAS 7 NOCHES</span> </div></li>
+              <li><div> <img src="images/icon-tag.png" alt="Image"> <small>DESDE</small> <span>$3,266 USD</span> </div></li>
             </ul>
             <a href="tours-single-nueva zelanda.html">VER DETALLE</a> </div>
           <!-- end tour-content -->

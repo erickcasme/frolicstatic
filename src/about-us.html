@@ -22,6 +22,27 @@
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/style.css">
+
+<style>
+
+  @media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+
+.quote {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 376px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  background-image:url(images/quote-bg02-movil.jpg) !important;
+}
+
+}
+</style>
+
 </head>
 <body>
 <div class="preloader">
@@ -162,7 +183,7 @@
 </section>
 <!-- end about-us -->
  
-<video width="100%" poster="images/video-bg.jpg" autoplay muted loop >
+<video width="100%" poster="images/video-bg.jpg" autoplay muted loop playsinline preload="auto">
   <source src="videos/video_viajeros_nosotrosl_low.mp4" type="video/mp4">
   <source src="videos/video_viajeros_nosotros.webm" type="video/webm">
   <div  data-background="images/tour-image-peru.jpg"></div>
